@@ -1,6 +1,7 @@
-rm -rf ./test
-mkdir ./test
+FOLDER=./test
 
-go test ./graph
-go test -coverprofile=./test/coverage.out ./graph
-go tool cover -html=./test/coverage.out
+rm -rf $FOLDER
+mkdir $FOLDER
+
+go test -coverprofile=$FOLDER/coverage.out ./graph
+go tool cover -html=$FOLDER/coverage.out
