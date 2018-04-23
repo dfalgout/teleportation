@@ -1,4 +1,4 @@
-FODLER=./output
+FOLDER=./output
 
 rm -rf $FOLDER
 mkdir $FOLDER
